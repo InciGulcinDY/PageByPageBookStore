@@ -1,12 +1,4 @@
 .App{
-    background-color: #F7F6F2;
-    color: #4B6587;
-}
-
-.mainDashboard{
-    color: #4B6587;
-}
-
-.card{
-    width: 18rem;
+  color: #4B6587;
+  background-color: #F7F6F2;
 }
