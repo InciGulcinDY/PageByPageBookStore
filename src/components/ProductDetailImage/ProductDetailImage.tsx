@@ -1,32 +1,11 @@
+import React from "react";
+
 type Props = {};
 
-const Home = (props: Props) => {
+const ProductDetailImage = (props: Props) => {
   return (
-    <div className="container">
-      {/* Carousel */}
-      <div id="carouselExampleIndicators" className="carousel slide">
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
+    <div>
+      <div id="carouselExample" className="carousel slide">
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img src="/assets/Carousel1.jpg" className="d-block w-100" alt="..." />
@@ -41,7 +20,7 @@ const Home = (props: Props) => {
         <button
           className="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselExample"
           data-bs-slide="prev"
         >
           <span
@@ -53,7 +32,7 @@ const Home = (props: Props) => {
         <button
           className="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselExample"
           data-bs-slide="next"
         >
           <span
@@ -67,4 +46,4 @@ const Home = (props: Props) => {
   );
 };
 
-export default Home;
+export default ProductDetailImage;

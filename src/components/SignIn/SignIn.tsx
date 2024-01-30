@@ -72,7 +72,7 @@ const SignIn = (props: Props) => {
       </Dropdown>
 
       {/* Cart */}
-      <Link to={"/"} type="button" className="btn">
+      <Link to={"/cart"} type="button" className="btn">
         Cart <span className="badge text-bg-success">4</span>
       </Link>
     </div>
