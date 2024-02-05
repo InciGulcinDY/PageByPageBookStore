@@ -4,7 +4,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <div>
+    <div className=" mt-5">
       {/* Footer - Starts */}
       <footer className="footer text-center fixed-bottom bg-light">
         <p className="mt-3 mb-2 fs-6">

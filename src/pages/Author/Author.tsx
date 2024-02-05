@@ -8,7 +8,7 @@ const Author = (props: Props) => {
   return (
     <div className='container'>
         <AuthorInfo></AuthorInfo>
-        <ProductCard></ProductCard>
+
     </div>
   )
 }

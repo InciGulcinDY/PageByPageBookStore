@@ -22,7 +22,7 @@ function App(): ReactElement {
         <Route path="/magazines" element={<Magazine />}></Route>
         <Route path="/authors" element={<Author />}></Route>
         <Route path="/cart" element={<Cart/>}></Route>
-        <Route path="/product" element={<ProductDetail/>}></Route>
+        <Route path="/product/:id" element={<ProductDetail/>}></Route>
         <Route path="/aboutus" element={<AboutUs/>}></Route>
         <Route path="*" element={<Home />}></Route>
       </Routes>

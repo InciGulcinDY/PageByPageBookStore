@@ -9,7 +9,8 @@ export interface BookModel {
   imagePath: string;
   unitPrice: number;
   numberOfPages: number;
-  numberOfEditions: number;
+  numberOfEditions: string;
+  summary: string;
   category: CategoryModel;
   language: LanguageModel;
   author: AuthorModel;

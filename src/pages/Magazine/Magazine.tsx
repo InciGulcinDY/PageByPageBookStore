@@ -7,7 +7,6 @@ const Magazine = (props: Props) => {
   return (
     <div>
 
-<ProductCard></ProductCard>
 
     </div>
   )

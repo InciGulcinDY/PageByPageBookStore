@@ -1,46 +1,39 @@
 import React from "react";
+import { Carousel } from "react-bootstrap";
+import { BookModel } from "../../models/BookModel";
 
-type Props = {};
+type Props = {
+  book: BookModel;
+};
 
-const ProductDetailImage = (props: Props) => {
+const ProductDetailImage = ({ book }: Props) => {
   return (
-    <div>
-      <div id="carouselExample" className="carousel slide">
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src="/assets/Carousel1.jpg" className="d-block w-100" alt="..." />
-          </div>
-          <div className="carousel-item">
-            <img src="/assets/Carousel2.jpg" className="d-block w-100" alt="..." />
-          </div>
-          <div className="carousel-item">
-            <img src="/assets/Carousel3.jpg" className="d-block w-100" alt="..." />
-          </div>
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
+    <div className="row">
+      <div className="col-3"></div>
+      <div className="col-6">
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={book.imagePath}
+              alt="First slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="/assets/product1.jpg"
+              alt="Second slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="/assets/product2.jpg"
+              alt="Third slide"
+            />
+          </Carousel.Item>
+        </Carousel>
       </div>
     </div>
   );
