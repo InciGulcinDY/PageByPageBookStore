@@ -1,12 +1,21 @@
 import { Link } from "react-router-dom";
 import "./style.css";
 import { BookModel } from "../../models/BookModel";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../store/slices/cartSlice";
 
 type Props = {
   product: BookModel;
 };
 
 const ProductCard = (product: Props) => {
+
+  const dispatch = useDispatch();
+
+  const addProductToCart = () => {
+    dispatch(addToCart({product: product.product}));
+  }
+
   return (
     <div className="Product-Card ">
       <div className="card">
@@ -31,9 +40,9 @@ const ProductCard = (product: Props) => {
             >
               See More
             </Link>
-            <Link to="#" className="btn btn-success">
+            <button  className="btn btn-success"      onClick={addProductToCart} >
               Add to Cart
-            </Link>
+            </button>
           </div>
         </div>
       </div>
