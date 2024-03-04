@@ -4,11 +4,11 @@ import axiosInstance from "../utils/interceptors/axiosInterceptors";
 
 class BookService {
   getAll(): Promise<AxiosResponse<BookModel[]>> {
-    return axiosInstance.get<BookModel[]>(`/api/books`);
+    return axiosInstance.get<BookModel[]>(`books`);
   }
 
   getById(id: number) {
-    return axiosInstance.get<BookModel>(`/api/books/${id}`);
+    return axiosInstance.get<BookModel>(`books/${id}`);
   }
 }
 
